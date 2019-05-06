@@ -49,6 +49,8 @@ this will print:
 
 ## R syntax supported:
 
+* **any python code is still valid**
+
 * **"<-" assign operator:** it will be replaced by a python "=". There should
 be no space between < and - . If you would like to do a less than 
 comparator to a negative  number, do < - (notice the space between < and
@@ -103,7 +105,7 @@ developers could write code in non-ascii languages (eg. chinese variable
 names). Pytwister creates a custom encoding called pytwister which 
 converts the R syntax elements into regular python before the file is 
 compiled. Once the pytwister codec is registered, any file starting with 
-# coding: pytwister is run through the pytwister parser before compilation.
+&#35;coding: pytwister is run through the pytwister parser before compilation.
 
 This package is inspired by [interpy](https://github.com/syrusakbary/interpy)
 and [pyxl](https://github.com/gvanrossum/pyxl3)
